@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, {useState} from 'react'
 import {Link, useLocation} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
@@ -6,7 +5,7 @@ import {useDispatch } from "react-redux";
 import { updateUser, getUser } from '../store/actions';
 
 
-export default function CreateUsers(props) {
+export default function EditUsers(props) {
     const params = useLocation();
     const dispatch = useDispatch()
     const [user, setUser] = useState(params.state?.user);
@@ -28,7 +27,7 @@ export default function CreateUsers(props) {
 
 
     const getCurrentUser = async () => {
-        dispatch(getUser(user.id))
+       await dispatch(getUser(user.id))
             .then(data => {
                 console.log(data?.data?.data, "returned data")
                 setInputValues({

@@ -31,7 +31,7 @@ export default function CreateUsers({navigation, ...props}) {
     const handleSubmit = async (event) => {
         setLoading(true)
         event.preventDefault()
-        dispatch(createUser(inputValues))
+       await dispatch(createUser(inputValues))
             .then(data => {
                 console.log(data)
                 setLoading(false)
@@ -119,10 +119,13 @@ export default function CreateUsers({navigation, ...props}) {
                         value={inputValues.contactNumber}
                         onChange={handleChange} />
                 </label>
-                <button className="submit-button red">Create</button>
+                <button className="submit-button red">
+                    {loading ? "Creating" : "Create User"}
+                    {loading ? <i className="fas fa-spinner fa-spin"></i> : null}
+                </button>
                 <Link to="/">
                     <div className="row">
-                        <i className='fa fa-arrow-left navbar-icon'> </i>
+                        <i className='fa fa-arrow-left'></i>
                         <div className='navbar-text'>Cancel</div>
                     </div>
                 </Link>
