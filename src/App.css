@@ -166,3 +166,98 @@
 .fa-spin {
 	font-size: 2rem;
 }
+
+/*  */
+
+.table-container {
+	overflow-x: scroll;
+}
+
+.table-heading-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 1rem;
+	width: 100vw;
+}
+
+.table-heading {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #00bfff;
+}
+
+.table-container::-webkit-scrollbar {
+	height: 8px;
+	background-color: lightblue;
+	padding: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 5px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 8px 7px;
+	font-size: 0.9rem;
+	height: 3.5rem;
+	width: 10.5vw;
+	min-width: 12rem;
+	max-width: 15rem;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr td:last-of-type,
+tr th:last-of-type {
+	min-width: 16rem; /* This is the minimum width of the last column to give space for floating actions */
+}
+
+tr .floating-actions {
+	position: absolute;
+	right: 0;
+	width: 5rem;
+	right: calc(3vw - 10px);
+	background-color: white;
+	height: 3.4rem;
+	margin-top: 0.05rem;
+	padding: 8px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.floating-actions i {
+	font-size: 1.1rem;
+	color: #00bfff;
+	cursor: pointer;
+}
+
+.floating-actions i.red {
+	color: red;
+}
+
+.table-button {
+	padding: 0.5rem 1.5rem;
+	margin: auto;
+	margin-top: 2rem;
+	font-size: 1rem;
+	background-color: #00bfff;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	font-weight: 500;
+}

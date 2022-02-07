@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppTest Renders the home page correctly with the usertable 1`] = `
+<DocumentFragment>
+  <div
+    class="page-container"
+  >
+    <div
+      class="navbar-container"
+    >
+      <div
+        class="navbar-title"
+        data-testid="navbar-title"
+      >
+        Home
+      </div>
+    </div>
+    <div
+      class="content-container"
+    >
+      <div
+        class="table-heading-container"
+      >
+        <div
+          class="table-heading"
+        >
+          User List
+        </div>
+        <div
+          class=""
+        >
+          <i
+            class="fa fa-spinner fa-spin"
+          />
+        </div>
+      </div>
+      <div
+        class="table-container"
+      >
+        <table
+          data-testid="user-table"
+        >
+          <thead>
+            <tr>
+              <th>
+                First Name
+              </th>
+              <th>
+                Last Name
+              </th>
+              <th>
+                Address 1
+              </th>
+              <th>
+                Address 2
+              </th>
+              <th>
+                Town
+              </th>
+              <th>
+                Region
+              </th>
+              <th>
+                Country
+              </th>
+              <th>
+                Postcode
+              </th>
+              <th>
+                Contact Number
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                colspan="8"
+              >
+                No Users Found
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a
+        class="table-button"
+        href="/create-user"
+      >
+        <div>
+          Create New User
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
