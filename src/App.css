@@ -1,0 +1,168 @@
+.navbar-container {
+	min-height: 5rem;
+	width: 100vw;
+	background-color: #00bfff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 1rem 2.5vw;
+}
+
+.navbar-container .navbar-text {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0 4rem 0 0.5rem;
+}
+.navbar-container .navbar-icon {
+	color: #fff;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.navbar-container .navbar-title {
+	color: white;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0rem 2.5vw;
+	margin-top: 3rem;
+}
+
+.content-container .user-container {
+	min-height: 200px;
+	min-width: 170px;
+	border-radius: 5px;
+	margin: 1rem 1rem 1rem 0;
+	padding: 0.5rem;
+	border: 2px solid lightblue;
+	display: flex;
+	flex-direction: column;
+}
+
+.user-container .user-avatar {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	align-self: center;
+	margin-top: 0.5rem;
+}
+
+.user-container .user-name {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.user-container .buttons-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 1.5rem;
+}
+
+.add-box-container {
+	min-height: 200px;
+	min-width: 170px;
+	border-radius: 5px;
+	padding: 0.5rem;
+	border: 2px solid lightblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.add-box-icon {
+	font-size: 2.5rem;
+	color: #00bfff;
+}
+
+.add-box-text {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top: 1.2rem;
+	text-align: center;
+	color: #00bfff;
+}
+
+/* Create Users Page */
+
+.page-container.form-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-container {
+	max-width: 850px;
+	margin-left: 3vw;
+	border: 2px solid lightblue;
+	padding: 2rem;
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.form-container label {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.form-container label input {
+	width: 90%;
+	margin: 1rem 0;
+	padding: 1rem;
+	border-radius: 5px;
+	border: 1px solid lightblue;
+}
+
+.submit-button {
+	width: 45%;
+	height: 3.5rem;
+	border-radius: 5px;
+	border: 2px solid #00bfff;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: white;
+	background-color: #00bfff;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.45s ease;
+	margin-top: 2rem;
+}
+
+.submit-button .fa-spinner{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.submit-button:disabled {
+	background-color: grey;
+	color: white;
+	border: none;
+}
+
+.submit-button:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+	transform: translateY(-0.25rem);
+}
+
+.fa-spin {
+	font-size: 2rem;
+}
